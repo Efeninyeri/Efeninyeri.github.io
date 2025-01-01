@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortalama Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css"> <!-- Stil dosyasını ekledik -->
+</head>
+<body>
+    <div class="container">
+        <h1>ORTALAMA HESAPLAYICI</h1>
+
+        <!-- Matematik Notları -->
+        <div>
+            <label for="matematik1">Matematik 1. Sınav:</label>
+            <input type="number" id="matematik1" placeholder="Matematik 1. sınav notunu gir" max="100" min="0">
+            
+            <label for="matematik2">Matematik 2. Sınav:</label>
+            <input type="number" id="matematik2" placeholder="Matematik 2. sınav notunu gir" max="100" min="0">
+        </div>
+
+        <!-- Fen Notları -->
+        <div>
+            <label for="fen1">Fen 1. Sınav:</label>
+            <input type="number" id="fen1" placeholder="Fen 1. sınav notunu gir" max="100" min="0">
+            
+            <label for="fen2">Fen 2. Sınav:</label>
+            <input type="number" id="fen2" placeholder="Fen 2. sınav notunu gir" max="100" min="0">
+        </div>
+
+        <!-- Türkçe Notları -->
+        <div>
+            <label for="tr1">Türkçe 1. Sınav:</label>
+            <input type="number" id="tr1" placeholder="Türkçe 1. sınav notunu gir" max="100" min="0">
+            
+            <label for="tr2">Türkçe 2. Sınav:</label>
+            <input type="number" id="tr2" placeholder="Türkçe 2. sınav notunu gir" max="100" min="0">
+        </div>
+
+        <!-- Sosyal Notları -->
+        <div>
+            <label for="sos1">Sosyal 1. Sınav:</label>
+            <input type="number" id="sos1" placeholder="Sosyal 1. sınav notunu gir" max="100" min="0">
+            
+            <label for="sos2">Sosyal 2. Sınav:</label>
+            <input type="number" id="sos2" placeholder="Sosyal 2. sınav notunu gir" max="100" min="0">
+        </div>
+
+        <!-- Hesapla Butonu -->
+        <button onclick="hesapla()">Hesapla</button>
+
+        <!-- Sonuçları Gösterme Alanı -->
+        <h2>Sonuçlar</h2>
+        <div class="result-container">
+            <!-- Sol tarafta Matematik ve Fen -->
+            <div>
+                <p id="sonucMatematik" class="mat-sonuc"></p>
+                <p id="sonucFen" class="fen-sonuc"></p>
+            </div>
+            <!-- Sağ tarafta Türkçe ve Sosyal -->
+            <div>
+                <p id="sonucTürkçe" class="turkce-sonuc"></p>
+                <p id="sonucSos" class="sos-sonuc"></p>
+                <p id="ortalama"class="ortalama-sonuc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript dosyasını ekledik -->
+</body>
+</html>
